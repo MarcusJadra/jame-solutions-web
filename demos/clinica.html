@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Bienestar — Salud dental y estética (Plantilla de ejemplo)</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --teal:#0E6E63; --teal-2:#14A392; --ink:#0F2A28; --bg:#FFFFFF; --bg-2:#F4FAF9;
+    --text:#12261F; --muted:#5C7772; --line:#E1ECE9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.55;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+  section{padding:76px 0;}
+
+  .demo-banner{background:var(--ink); color:#fff; font-size:13px; text-align:center; padding:10px 16px;}
+  .demo-banner a{color:#7FE0D1; font-weight:700; text-decoration:underline;}
+
+  header{border-bottom:1px solid var(--line); position:sticky; top:0; background:#fff; z-index:10;}
+  nav.wrap{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .brand{font-weight:800; font-size:18px; color:var(--ink);}
+  .brand span{color:var(--teal-2);}
+  .nav-links{display:flex; gap:26px; font-size:13px; font-weight:600; color:var(--muted);}
+  .btn{display:inline-block; font-weight:700; font-size:14px; padding:12px 24px; border-radius:8px; background:var(--teal); color:#fff;}
+
+  #hero{background:var(--bg-2);}
+  .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;}
+  .eyebrow{font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--teal-2); font-weight:700; margin-bottom:14px;}
+  h1{font-size:38px; color:var(--ink); margin-bottom:16px;}
+  .hero-sub{color:var(--muted); font-size:15px; margin-bottom:26px; max-width:420px;}
+  .hero-visual{background:#fff; border:1px solid var(--line); border-radius:20px; height:280px; display:flex; align-items:center; justify-content:center;}
+  .hero-visual svg{width:100px; height:100px; stroke:var(--teal-2);}
+
+  .shead{max-width:520px; margin:0 auto 44px; text-align:center;}
+  .shead h2{font-size:28px; color:var(--ink);}
+  .shead p{color:var(--muted); margin-top:10px; font-size:14px;}
+
+  .services-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .service-card{background:var(--bg-2); border:1px solid var(--line); border-radius:14px; padding:26px;}
+  .service-card .icon{width:42px; height:42px; border-radius:10px; background:rgba(14,110,99,0.1); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+  .service-card .icon svg{width:20px; height:20px; stroke:var(--teal);}
+  .service-card h3{font-size:15px; margin-bottom:8px; color:var(--ink);}
+  .service-card p{font-size:13px; color:var(--muted);}
+
+  #equipo{background:var(--bg-2);}
+  .team-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; text-align:center;}
+  .team-card{background:#fff; border:1px solid var(--line); border-radius:14px; padding:26px 18px;}
+  .avatar{width:60px; height:60px; border-radius:50%; background:linear-gradient(135deg,var(--teal),var(--teal-2)); margin:0 auto 14px;}
+  .team-card h3{font-size:15px; color:var(--ink); margin-bottom:4px;}
+  .team-card span{font-size:12px; color:var(--muted);}
+
+  #cta{background:var(--ink); color:#fff; text-align:center;}
+  #cta h2{font-size:28px; margin-bottom:14px;}
+  #cta p{color:#B9D6D0; margin-bottom:24px;}
+
+  footer{padding:40px 24px; text-align:center;}
+  footer p{color:var(--muted); font-size:13px; margin-bottom:18px;}
+
+  @media (max-width:760px){
+    .hero-grid, .services-grid, .team-grid{grid-template-columns:1fr;}
+    .nav-links{display:none;}
+    h1{font-size:30px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Plantilla de ejemplo creada por JAME Solutions — <a href="../index.html#ejemplos">volver al sitio principal</a></div>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">Clínica <span>Bienestar</span></div>
+    <div class="nav-links">
+      <a href="#servicios">Tratamientos</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#cta">Agendar</a>
+    </div>
+    <a href="#cta" class="btn">Agendar hora</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Salud dental y estética</div>
+      <h1>Tu sonrisa y tu piel, en manos expertas.</h1>
+      <p class="hero-sub">Tratamientos dentales y estéticos con tecnología moderna y atención personalizada, en el centro de la ciudad.</p>
+      <a href="#cta" class="btn">Agenda tu hora</a>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/><path d="M9 12h6M12 9v6"/></svg>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Tratamientos</div>
+      <h2>Nuestros servicios</h2>
+      <p>Atención integral, desde chequeos de rutina hasta tratamientos estéticos avanzados.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Odontología general</h3><p>Chequeos, limpiezas y tratamientos preventivos.</p></div>
+      <div class="service-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div><h3>Estética facial</h3><p>Tratamientos para rejuvenecer y cuidar tu piel.</p></div>
+      <div class="service-card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg></div><h3>Ortodoncia</h3><p>Planes de tratamiento a tu ritmo y presupuesto.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="equipo">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Nuestro equipo</div>
+      <h2>Profesionales certificados</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card"><div class="avatar"></div><h3>Dra. Fernanda Rivas</h3><span>Odontología general</span></div>
+      <div class="team-card"><div class="avatar"></div><h3>Dr. Ignacio Soto</h3><span>Ortodoncia</span></div>
+      <div class="team-card"><div class="avatar"></div><h3>Dra. Camila Reyes</h3><span>Estética facial</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="wrap">
+    <h2>¿Te gusta este estilo?</h2>
+    <p>Esto es solo una plantilla de ejemplo. Podemos crear una así para tu clínica o centro de salud.</p>
+    <a href="https://wa.me/56987260080?text=Hola%2C%20me%20interes%C3%B3%20la%20plantilla%20de%20Cl%C3%ADnica" target="_blank" rel="noopener" class="btn" style="background:#fff; color:var(--ink);">Cotiza la tuya por WhatsApp</a>
+  </div>
+</section>
+
+<footer><p>Clínica Bienestar — Plantilla de ejemplo de JAME Solutions</p></footer>
+
+</body>
+</html>

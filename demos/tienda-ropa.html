@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NÓMADA — Tienda de ropa (Plantilla de ejemplo)</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --ink:#111111; --paper:#F5F3EF; --coral:#FF5C4D; --line:#E4E1DA; --muted:#6B6B66;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.4;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+  section{padding:64px 0;}
+
+  .demo-banner{background:var(--ink); color:#fff; font-size:13px; text-align:center; padding:10px 16px;}
+  .demo-banner a{color:var(--coral); font-weight:700; text-decoration:underline;}
+
+  header{border-bottom:1px solid var(--line);}
+  nav.wrap{display:flex; justify-content:space-between; align-items:center; padding:20px 24px;}
+  .brand{font-weight:900; font-size:22px; letter-spacing:0.06em;}
+  .nav-links{display:flex; gap:28px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em;}
+  .btn{display:inline-block; font-weight:700; font-size:13px; padding:13px 26px; background:var(--ink); color:#fff; text-transform:uppercase; letter-spacing:0.04em;}
+  .btn.accent{background:var(--coral);}
+
+  #hero{padding:80px 0; text-align:center;}
+  .eyebrow{font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:var(--coral); font-weight:800; margin-bottom:18px;}
+  h1{font-size:56px; font-weight:900; letter-spacing:-0.02em; line-height:0.98; margin-bottom:20px;}
+  #hero p{color:var(--muted); max-width:420px; margin:0 auto 30px; font-size:15px;}
+
+  .shead{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px;}
+  .shead h2{font-size:26px; font-weight:900;}
+  .shead span{font-size:13px; color:var(--muted); font-weight:600;}
+
+  .cat-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:4px;}
+  .cat-card{aspect-ratio:3/4; background:var(--ink); position:relative; display:flex; align-items:flex-end; padding:18px; overflow:hidden;}
+  .cat-card::before{content:""; position:absolute; inset:0; opacity:0.85;}
+  .cat-card.c1::before{background:linear-gradient(160deg,#FF5C4D,#3B2418);}
+  .cat-card.c2::before{background:linear-gradient(160deg,#2D2D2D,#111);}
+  .cat-card.c3::before{background:linear-gradient(160deg,#C97B3D,#111);}
+  .cat-card.c4::before{background:linear-gradient(160deg,#111,#4A4A4A);}
+  .cat-card span{position:relative; color:#fff; font-weight:800; font-size:15px; text-transform:uppercase; letter-spacing:0.03em;}
+
+  #promo{background:var(--ink); color:#fff; text-align:center; padding:70px 0;}
+  #promo .eyebrow{color:var(--coral);}
+  #promo h2{font-size:32px; font-weight:900; margin-bottom:16px;}
+  #promo p{color:#CFCFCF; margin-bottom:26px;}
+
+  .prod-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+  .prod-card{background:#fff; border:1px solid var(--line);}
+  .prod-media{aspect-ratio:1; background:linear-gradient(160deg,#E9E5DC,#D8D2C4); display:flex; align-items:center; justify-content:center;}
+  .prod-media svg{width:34px; height:34px; stroke:var(--ink); opacity:.4;}
+  .prod-info{padding:14px;}
+  .prod-info h3{font-size:13px; font-weight:700; margin-bottom:4px;}
+  .prod-info .price{font-size:13px; font-weight:800; color:var(--coral);}
+
+  footer{padding:48px 24px; text-align:center; border-top:1px solid var(--line);}
+  footer p{color:var(--muted); font-size:13px;}
+
+  @media (max-width:820px){
+    .cat-grid, .prod-grid{grid-template-columns:repeat(2,1fr);}
+    .nav-links{display:none;}
+    h1{font-size:38px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Plantilla de ejemplo creada por JAME Solutions — <a href="../index.html#ejemplos">volver al sitio principal</a></div>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">NÓMADA</div>
+    <div class="nav-links">
+      <a href="#categorias">Categorías</a>
+      <a href="#productos">Productos</a>
+      <a href="#cta">Contacto</a>
+    </div>
+    <a href="#cta" class="btn">Cotizar la mía</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <div class="wrap">
+    <div class="eyebrow">Nueva colección</div>
+    <h1>ROPA CON<br>ACTITUD</h1>
+    <p>Piezas pensadas para moverte, sin perder el estilo. Envíos a todo Chile.</p>
+    <a href="#productos" class="btn accent">Ver colección</a>
+  </div>
+</section>
+
+<section id="categorias">
+  <div class="wrap">
+    <div class="shead"><h2>Categorías</h2><span>4 colecciones</span></div>
+    <div class="cat-grid">
+      <div class="cat-card c1"><span>Mujer</span></div>
+      <div class="cat-card c2"><span>Hombre</span></div>
+      <div class="cat-card c3"><span>Accesorios</span></div>
+      <div class="cat-card c4"><span>Calzado</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="productos">
+  <div class="wrap">
+    <div class="shead"><h2>Destacados</h2><span>Lo más vendido</span></div>
+    <div class="prod-grid">
+      <div class="prod-card"><div class="prod-media"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M6 2l1.5 4h9L18 2M4 6h16l-1.5 14h-13L4 6z"/></svg></div><div class="prod-info"><h3>Chaqueta Urban</h3><div class="price">$34.990</div></div></div>
+      <div class="prod-card"><div class="prod-media"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M6 2l1.5 4h9L18 2M4 6h16l-1.5 14h-13L4 6z"/></svg></div><div class="prod-info"><h3>Polerón Nómada</h3><div class="price">$22.990</div></div></div>
+      <div class="prod-card"><div class="prod-media"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M6 2l1.5 4h9L18 2M4 6h16l-1.5 14h-13L4 6z"/></svg></div><div class="prod-info"><h3>Pantalón Cargo</h3><div class="price">$27.990</div></div></div>
+      <div class="prod-card"><div class="prod-media"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M6 2l1.5 4h9L18 2M4 6h16l-1.5 14h-13L4 6z"/></svg></div><div class="prod-info"><h3>Gorro Tejido</h3><div class="price">$12.990</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="promo">
+  <div class="wrap">
+    <div class="eyebrow">Plantilla de ejemplo</div>
+    <h2>¿Te gusta este estilo?</h2>
+    <p>Podemos crear una tienda así para tu marca de ropa o retail, con catálogo real y carrito de compra.</p>
+    <a href="https://wa.me/56987260080?text=Hola%2C%20me%20interes%C3%B3%20la%20plantilla%20de%20Tienda%20de%20ropa" target="_blank" rel="noopener" class="btn accent">Cotiza la tuya por WhatsApp</a>
+  </div>
+</section>
+
+<footer><p>NÓMADA — Plantilla de ejemplo de JAME Solutions</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabores del Puerto — Restaurante (Plantilla de ejemplo)</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --brown:#2E1B12; --terracotta:#C97B3D; --cream:#FBF3EA; --cream-2:#F3E4D3;
+    --mustard:#E3A857; --text:#2E1B12; --muted:#7A6552; --line:rgba(46,27,18,0.12);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:var(--cream); color:var(--text); font-family:Georgia,'Times New Roman',serif; line-height:1.5;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1040px; margin:0 auto; padding:0 24px;}
+  section{padding:72px 0;}
+
+  .demo-banner{background:var(--brown); color:#fff; font-family:-apple-system,'Segoe UI',Arial,sans-serif; font-size:13px; text-align:center; padding:10px 16px;}
+  .demo-banner a{color:var(--mustard); font-weight:700; text-decoration:underline;}
+
+  header{background:var(--brown); color:#fff; padding:18px 0;}
+  nav.wrap{display:flex; justify-content:space-between; align-items:center;}
+  .brand{font-size:20px; font-weight:700; letter-spacing:0.02em;}
+  .brand span{color:var(--mustard);}
+  .nav-links{display:flex; gap:26px; font-family:-apple-system,'Segoe UI',Arial,sans-serif; font-size:13px; text-transform:uppercase; letter-spacing:0.04em;}
+
+  #hero{background:linear-gradient(160deg,var(--brown),#4A2C1B); color:#fff; text-align:center; padding:90px 0;}
+  #hero .eyebrow{font-family:-apple-system,Arial,sans-serif; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:var(--mustard); margin-bottom:16px;}
+  #hero h1{font-size:44px; margin-bottom:16px;}
+  #hero p{font-family:-apple-system,Arial,sans-serif; color:#E8D9C8; max-width:480px; margin:0 auto 28px; font-size:15px;}
+  .btn{display:inline-block; font-family:-apple-system,Arial,sans-serif; font-weight:700; font-size:14px; padding:14px 30px; border-radius:30px; background:var(--terracotta); color:#fff;}
+
+  #menu .shead{text-align:center; max-width:520px; margin:0 auto 48px;}
+  #menu .eyebrow{font-family:-apple-system,Arial,sans-serif; font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--terracotta); margin-bottom:10px;}
+  #menu h2{font-size:32px;}
+  .menu-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
+  .menu-item{display:flex; justify-content:space-between; gap:16px; padding:20px; background:var(--cream-2); border-radius:12px;}
+  .menu-item .dish h3{font-size:17px; margin-bottom:6px;}
+  .menu-item .dish p{font-family:-apple-system,Arial,sans-serif; font-size:12px; color:var(--muted);}
+  .menu-item .price{font-family:-apple-system,Arial,sans-serif; font-weight:700; color:var(--terracotta); white-space:nowrap;}
+
+  #info{background:var(--brown); color:#fff;}
+  .info-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:32px; text-align:center;}
+  .info-grid h3{font-family:-apple-system,Arial,sans-serif; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:var(--mustard); margin-bottom:10px;}
+  .info-grid p{font-family:-apple-system,Arial,sans-serif; font-size:14px; color:#E8D9C8;}
+
+  footer{text-align:center; padding:48px 24px; font-family:-apple-system,Arial,sans-serif;}
+  footer h3{font-family:Georgia,serif; font-size:22px; margin-bottom:12px;}
+  footer p{color:var(--muted); font-size:13px; margin-bottom:20px;}
+
+  @media (max-width:720px){
+    .menu-grid, .info-grid{grid-template-columns:1fr;}
+    .nav-links{display:none;}
+    #hero h1{font-size:32px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Plantilla de ejemplo creada por JAME Solutions — <a href="../index.html#ejemplos">volver al sitio principal</a></div>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">Sabores <span>del Puerto</span></div>
+    <div class="nav-links">
+      <a href="#menu">Menú</a>
+      <a href="#info">Horarios</a>
+      <a href="#contacto">Reservas</a>
+    </div>
+  </nav>
+</header>
+
+<section id="hero">
+  <div class="wrap">
+    <div class="eyebrow">Cocina de mar · Mejillones</div>
+    <h1>Sabores del Puerto</h1>
+    <p>Cocina marina fresca, en un ambiente cálido frente al mar. Reserva tu mesa para hoy.</p>
+    <a href="#contacto" class="btn">Reservar mesa</a>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Nuestra carta</div>
+      <h2>Platos destacados</h2>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-item"><div class="dish"><h3>Machas a la parmesana</h3><p>Machas frescas gratinadas con queso parmesano</p></div><div class="price">$8.900</div></div>
+      <div class="menu-item"><div class="dish"><h3>Reineta frita</h3><p>Con papas doradas y ensalada de la casa</p></div><div class="price">$9.500</div></div>
+      <div class="menu-item"><div class="dish"><h3>Paila marina</h3><p>Mariscos surtidos en caldo de mar</p></div><div class="price">$10.200</div></div>
+      <div class="menu-item"><div class="dish"><h3>Ceviche del puerto</h3><p>Pescado blanco marinado en limón y cilantro</p></div><div class="price">$7.800</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="wrap info-grid">
+    <div><h3>Horario</h3><p>Mar a Dom<br>12:30 – 22:30</p></div>
+    <div><h3>Ubicación</h3><p>Av. Costanera 450<br>Mejillones, Chile</p></div>
+    <div><h3>Reservas</h3><p>+56 9 0000 0000<br>WhatsApp</p></div>
+  </div>
+</section>
+
+<footer id="contacto">
+  <h3>¿Te gusta este estilo?</h3>
+  <p>Esto es solo una plantilla de ejemplo. Podemos crear una así para tu restaurante o cafetería.</p>
+  <a href="https://wa.me/56987260080?text=Hola%2C%20me%20interes%C3%B3%20la%20plantilla%20de%20Restaurante" target="_blank" rel="noopener" class="btn" style="color:#fff;">Cotiza la tuya por WhatsApp</a>
+</footer>
+
+</body>
+</html>

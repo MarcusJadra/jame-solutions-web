@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizonte Propiedades — Inmobiliaria (Plantilla de ejemplo)</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --navy:#132038; --navy-2:#1B2C4C; --gold:#C6A15B; --gold-2:#E1C284;
+    --bg:#F7F6F3; --text:#182234; --muted:#66707F; --line:#E4E1D9;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; line-height:1.5;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+  section{padding:76px 0;}
+
+  .demo-banner{background:var(--navy); color:#fff; font-size:13px; text-align:center; padding:10px 16px;}
+  .demo-banner a{color:var(--gold-2); font-weight:700; text-decoration:underline;}
+
+  header{background:var(--navy); color:#fff;}
+  nav.wrap{display:flex; justify-content:space-between; align-items:center; padding:18px 24px;}
+  .brand{font-weight:800; font-size:18px; letter-spacing:0.02em;}
+  .brand span{color:var(--gold);}
+  .nav-links{display:flex; gap:26px; font-size:13px; font-weight:600; color:#B9C2D6;}
+  .btn{display:inline-block; font-weight:700; font-size:14px; padding:12px 26px; border-radius:4px; background:var(--gold); color:var(--navy);}
+
+  #hero{background:linear-gradient(160deg,var(--navy),var(--navy-2)); color:#fff; padding:90px 0 60px; text-align:center;}
+  .eyebrow{font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:16px;}
+  h1{font-size:40px; margin-bottom:16px;}
+  #hero p{color:#B9C2D6; max-width:480px; margin:0 auto 30px; font-size:15px;}
+  .searchbar{max-width:640px; margin:0 auto; background:#fff; border-radius:10px; padding:8px; display:flex; gap:8px;}
+  .searchbar input{flex:1; border:none; padding:12px 16px; font-size:14px; color:var(--text); font-family:inherit;}
+  .searchbar input:focus{outline:none;}
+  .searchbar button{border:none; background:var(--gold); color:var(--navy); font-weight:700; padding:0 22px; border-radius:6px; cursor:pointer; font-size:13px;}
+
+  .shead{max-width:520px; margin:0 auto 44px; text-align:center;}
+  .shead h2{font-size:28px;}
+  .shead p{color:var(--muted); margin-top:10px; font-size:14px;}
+
+  .prop-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .prop-card{background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden;}
+  .prop-media{height:150px; background:linear-gradient(135deg,var(--navy),var(--navy-2)); display:flex; align-items:center; justify-content:center;}
+  .prop-media svg{width:44px; height:44px; stroke:var(--gold);}
+  .prop-body{padding:18px 20px 22px;}
+  .prop-tag{font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:var(--gold); font-weight:700; margin-bottom:8px;}
+  .prop-body h3{font-size:16px; margin-bottom:6px;}
+  .prop-body .loc{font-size:12px; color:var(--muted); margin-bottom:14px;}
+  .prop-meta{display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); padding-top:14px;}
+  .prop-meta .price{font-weight:800; color:var(--navy);}
+  .prop-meta .specs{font-size:11px; color:var(--muted);}
+
+  #cta{background:var(--navy); color:#fff; text-align:center;}
+  #cta h2{font-size:28px; margin-bottom:14px;}
+  #cta p{color:#B9C2D6; margin-bottom:24px;}
+
+  footer{padding:40px 24px; text-align:center;}
+  footer p{color:var(--muted); font-size:13px;}
+
+  @media (max-width:760px){
+    .prop-grid{grid-template-columns:1fr;}
+    .nav-links{display:none;}
+    h1{font-size:30px;}
+    .searchbar{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">Plantilla de ejemplo creada por JAME Solutions — <a href="../index.html#ejemplos">volver al sitio principal</a></div>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">Horizonte <span>Propiedades</span></div>
+    <div class="nav-links">
+      <a href="#propiedades">Propiedades</a>
+      <a href="#cta">Contacto</a>
+    </div>
+    <a href="#cta" class="btn">Hablar con un agente</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <div class="wrap">
+    <div class="eyebrow">Arriendos y ventas</div>
+    <h1>Encuentra tu próximo hogar</h1>
+    <p>Propiedades verificadas en las mejores ubicaciones, con acompañamiento de un agente real en cada paso.</p>
+    <div class="searchbar">
+      <input type="text" placeholder="Comuna, tipo de propiedad o rango de precio...">
+      <button>Buscar</button>
+    </div>
+  </div>
+</section>
+
+<section id="propiedades">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Destacadas</div>
+      <h2>Propiedades destacadas</h2>
+    </div>
+    <div class="prop-grid">
+      <div class="prop-card">
+        <div class="prop-media"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 11l9-7 9 7M5 10v10h14V10"/></svg></div>
+        <div class="prop-body">
+          <div class="prop-tag">En arriendo</div>
+          <h3>Depto 2D/1B — Centro</h3>
+          <div class="loc">Antofagasta, cerca de plaza</div>
+          <div class="prop-meta"><span class="price">$380.000</span><span class="specs">55 m² · 2D · 1B</span></div>
+        </div>
+      </div>
+      <div class="prop-card">
+        <div class="prop-media"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 11l9-7 9 7M5 10v10h14V10"/></svg></div>
+        <div class="prop-body">
+          <div class="prop-tag">En venta</div>
+          <h3>Casa 3D/2B — Sector Alto</h3>
+          <div class="loc">Mejillones, vista al mar</div>
+          <div class="prop-meta"><span class="price">UF 3.200</span><span class="specs">120 m² · 3D · 2B</span></div>
+        </div>
+      </div>
+      <div class="prop-card">
+        <div class="prop-media"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 11l9-7 9 7M5 10v10h14V10"/></svg></div>
+        <div class="prop-body">
+          <div class="prop-tag">En arriendo</div>
+          <h3>Oficina 40 m² — Centro</h3>
+          <div class="loc">Antofagasta, edificio corporativo</div>
+          <div class="prop-meta"><span class="price">$420.000</span><span class="specs">40 m² · Oficina</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="wrap">
+    <h2>¿Te gusta este estilo?</h2>
+    <p>Esto es solo una plantilla de ejemplo. Podemos crear una así para tu inmobiliaria o corretaje.</p>
+    <a href="https://wa.me/56987260080?text=Hola%2C%20me%20interes%C3%B3%20la%20plantilla%20de%20Inmobiliaria" target="_blank" rel="noopener" class="btn">Cotiza la tuya por WhatsApp</a>
+  </div>
+</section>
+
+<footer><p>Horizonte Propiedades — Plantilla de ejemplo de JAME Solutions</p></footer>
+
+</body>
+</html>
