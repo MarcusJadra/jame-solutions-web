@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JAME Solutions — Plantillas y Desarrollo Web & Apps</title>
-<meta name="description" content="Plantillas propias de sitios web y apps móviles listas para lanzar, o desarrollo 100% a medida. Estudio de diseño y desarrollo en Chile.">
+<title>JAME Solutions — Diseño Web y Apps para Empresas en Chile | Plantillas desde $79.990</title>
+<meta name="description" content="Diseño web Chile y apps para empresas: plantillas listas desde $79.990 o proyectos 100% a medida, sin intermediarios.">
 <link rel="canonical" href="https://jamesolutions.cl/">
 <meta name="theme-color" content="#0A0A0D">
 
@@ -29,6 +29,69 @@
   "description": "Estudio de diseño y desarrollo de páginas web y aplicaciones móviles en Chile.",
   "email": "contacto@jamesolutions.cl",
   "areaServed": "CL"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "JAME Solutions",
+  "url": "https://jamesolutions.cl/",
+  "telephone": "+56987260080",
+  "email": "contacto@jamesolutions.cl",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CL"
+  },
+  "priceRange": "$79.990 - $390.000"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta una página web o app con JAME Solutions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de si partes de una de nuestras plantillas (precio más bajo, desde $79.990) o si necesitas un proyecto 100% a medida, que cotizamos según el alcance. Siempre te damos un precio claro antes de partir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto se demora el desarrollo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una plantilla adaptada a tu marca suele estar lista en pocos días. Un proyecto a medida depende de su complejidad; te damos un plazo estimado apenas revisamos lo que necesitas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia hay entre una plantilla y un proyecto a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La plantilla parte de un diseño ya hecho que adaptamos a tu marca y contenido: es más rápida y económica. El proyecto a medida se diseña desde cero para tu negocio, sin límites de estructura."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Incluye hosting y dominio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Por ahora nos enfocamos en el diseño y desarrollo. La gestión de dominio y hosting está en preparación como servicio adicional — mientras tanto te orientamos para contratarlo tú mismo si lo necesitas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo pedir cambios después de publicada la web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Ofrecemos mantenimiento y soporte para ajustes y actualizaciones una vez tu sitio está en línea."
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -184,6 +247,7 @@
   .case-body p{font-size:14px; color:var(--muted); margin-bottom:16px;}
   .tags{display:flex; gap:8px; flex-wrap:wrap;}
   .tag-pill{font-size:11px; padding:4px 10px; border-radius:12px; border:1px solid var(--line); color:var(--muted);}
+  .case-stat{font-size:12px; font-weight:700; color:var(--emerald); margin-top:14px;}
   .case-note{text-align:center; font-size:13px; color:var(--muted); margin-top:32px;}
   .case-note a{color:var(--violet-2); font-weight:700;}
 
@@ -245,8 +309,9 @@
   .foot-social a:hover svg{stroke:var(--violet-2);}
   .foot-legal{font-size:12px; color:var(--muted); margin-top:20px; text-align:center;}
 
-  .wa-float{position:fixed; bottom:22px; right:22px; z-index:60; background:#25D366; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,0.45);}
+  .wa-float{position:fixed; bottom:22px; right:22px; z-index:60; background:#25D366; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,0.45); transition:opacity .2s ease, transform .2s ease;}
   .wa-float svg{width:28px; height:28px; fill:#fff;}
+  .wa-float.hide{opacity:0; transform:scale(.85); pointer-events:none;}
 
   @media (max-width:860px){
     .nav-links{
@@ -356,7 +421,7 @@
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg></div>
         <h3>App de reservas o turnos</h3>
         <p>Base de app móvil para gestionar reservas, turnos o citas, lista para adaptar a tu operación.</p>
-        <div class="price">Cotización <b>según tu marca</b></div>
+        <div class="price">Desde <b>$390.000</b> · según alcance</div>
         <a href="https://wa.me/56987260080?text=Hola%2C%20me%20interesa%20la%20App%20de%20reservas%20o%20turnos" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Solicitar</a>
       </div>
       <div class="product-card">
@@ -398,7 +463,7 @@
       <button class="ex-nav prev" aria-label="Ejemplo anterior">‹</button>
       <div class="examples-track" id="examplesTrack">
         <div class="example-card">
-          <div class="example-swatch restaurante"><img src="assets/demo-restaurante.png" alt="Vista previa plantilla Restaurante"></div>
+          <div class="example-swatch restaurante"><img src="assets/demo-restaurante.png" alt="Diseño web para restaurantes en Chile — plantilla de ejemplo JAME Solutions" loading="lazy"></div>
           <div class="example-body">
             <div class="etag">Restaurante / Cafetería</div>
             <h3>Menú, reservas y ubicación</h3>
@@ -407,7 +472,7 @@
           </div>
         </div>
         <div class="example-card">
-          <div class="example-swatch clinica"><img src="assets/demo-clinica.png" alt="Vista previa plantilla Clínica"></div>
+          <div class="example-swatch clinica"><img src="assets/demo-clinica.png" alt="Diseño web para clínicas y salud dental en Chile — plantilla de ejemplo" loading="lazy"></div>
           <div class="example-body">
             <div class="etag">Clínica / Salud</div>
             <h3>Servicios y agenda de horas</h3>
@@ -416,7 +481,7 @@
           </div>
         </div>
         <div class="example-card">
-          <div class="example-swatch inmobiliaria"><img src="assets/demo-inmobiliaria.png" alt="Vista previa plantilla Inmobiliaria"></div>
+          <div class="example-swatch inmobiliaria"><img src="assets/demo-inmobiliaria.png" alt="Diseño web para inmobiliarias en Chile — plantilla de ejemplo" loading="lazy"></div>
           <div class="example-body">
             <div class="etag">Inmobiliaria</div>
             <h3>Propiedades y contacto directo</h3>
@@ -425,7 +490,7 @@
           </div>
         </div>
         <div class="example-card">
-          <div class="example-swatch tienda"><img src="assets/demo-tienda-ropa.png" alt="Vista previa plantilla Tienda de ropa"></div>
+          <div class="example-swatch tienda"><img src="assets/demo-tienda-ropa.png" alt="Diseño web para tiendas de ropa en Chile — plantilla de ejemplo" loading="lazy"></div>
           <div class="example-body">
             <div class="etag">Tienda / Retail</div>
             <h3>Catálogo de productos</h3>
@@ -534,8 +599,8 @@
     <div class="case-grid">
       <div class="case-card">
         <div class="case-media phone-bg">
-          <div class="phone-shell"><img src="assets/atraque-mejillones-mobile.png" alt="Atraque Mejillones — pantalla de inicio en el celular"></div>
-          <div class="phone-shell"><img src="assets/atraque-mejillones-list-mobile.png" alt="Atraque Mejillones — turnos en tiempo real dentro de la app"></div>
+          <div class="phone-shell"><img src="assets/atraque-mejillones-mobile.png" alt="App de gestión de turnos portuarios en Mejillones, Chile — pantalla de inicio en el celular" loading="lazy"></div>
+          <div class="phone-shell"><img src="assets/atraque-mejillones-list-mobile.png" alt="App de gestión de turnos portuarios en Mejillones, Chile — turnos en tiempo real" loading="lazy"></div>
         </div>
         <div class="case-body">
           <div class="case-kicker">Cliente · App · PWA</div>
@@ -546,10 +611,12 @@
             <span class="tag-pill">Android</span>
             <span class="tag-pill">Tiempo real</span>
           </div>
+          <!-- TODO: reemplazar con cifra real entregada por el cliente -->
+          <div class="case-stat">App en producción · [COMPLETAR: nº usuarios o turnos gestionados]</div>
         </div>
       </div>
       <div class="case-card">
-        <div class="case-media"><img src="assets/proyecto-radio-impacto.png" alt="Radio Impacto"></div>
+        <div class="case-media"><img src="assets/proyecto-radio-impacto.png" alt="Diseño web para radio online en Chile — proyecto Radio Impacto" loading="lazy"></div>
         <div class="case-body">
           <div class="case-kicker">Cliente · Web · Medios</div>
           <h3>Radio Impacto</h3>
@@ -711,7 +778,7 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/56987260080" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+<a class="wa-float" id="waFloat" href="https://wa.me/56987260080?text=Hola%2C%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C22 6.45 17.5 2 12.04 2zm0 18.1h-.01c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.33c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 012.41 5.82c0 4.53-3.7 8.19-8.22 8.19zm4.51-6.14c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.96-.15.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.02s.87 2.35 1 2.5c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.46-.6 1.66-1.17.21-.58.21-1.08.15-1.18-.07-.11-.23-.17-.48-.29z"/></svg>
 </a>
 
@@ -886,6 +953,17 @@
     const body = encodeURIComponent(`Hola, soy ${name}.\nContacto: ${contact}\n\n${msg}`);
     window.location.href = `mailto:contacto@jamesolutions.cl?subject=Nuevo%20proyecto&body=${body}`;
   });
+
+  (function(){
+    const waFloat = document.getElementById('waFloat');
+    const contactForm = document.getElementById('contactForm');
+    if (waFloat && contactForm && 'IntersectionObserver' in window) {
+      const obs = new IntersectionObserver(([entry]) => {
+        waFloat.classList.toggle('hide', window.innerWidth <= 860 && entry.isIntersecting);
+      }, { threshold: 0.25 });
+      obs.observe(contactForm);
+    }
+  })();
 </script>
 </body>
 </html>
